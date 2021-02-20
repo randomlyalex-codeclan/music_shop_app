@@ -9,4 +9,5 @@ public abstract class Instrument extends StockItem {
         this.material = material;
         this.family = family;
     }
+
 }
