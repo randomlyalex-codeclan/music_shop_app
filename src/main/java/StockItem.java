@@ -1,4 +1,4 @@
-public abstract class StockItem {
+public abstract class StockItem implements ISell{
     private String name;
     private double retailPrice;
     private double costPrice;
