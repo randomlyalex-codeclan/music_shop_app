@@ -1,4 +1,4 @@
-public abstract class Instrument extends StockItem {
+public abstract class Instrument extends StockItem implements IPlay {
     private String colour;
     private String material;
     private String family;
@@ -9,5 +9,5 @@ public abstract class Instrument extends StockItem {
         this.material = material;
         this.family = family;
     }
-
+    public abstract String play();
 }

@@ -6,4 +6,13 @@ public class Piano extends Instrument {
         super(name, retailPrice, costPrice, colour, material, family);
         this.noOfKeys = noOfKeys;
     }
+
+    public double calculateMarkUp() {
+        return 0;
+    }
+
+    @Override
+    public String play() {
+        return null;
+    }
 }
