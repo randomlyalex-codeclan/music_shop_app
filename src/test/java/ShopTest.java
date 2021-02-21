@@ -30,4 +30,11 @@ public class ShopTest {
         shop.removeFromStock(guitar);
         assertEquals(1, shop.stockCount());
     }
+
+    @Test
+    public void calculateTotalShopMarkup(){
+        shop.addToStock(guitar);
+        shop.addToStock(piano);
+        assertEquals(1.083333333333333, shop.totalMarkup(), 0.0001);
+    }
 }

@@ -21,4 +21,12 @@ public class Shop {
     public int stockCount() {
         return stock.size();
     }
+
+    public double totalMarkup() {
+        double totalMakupAdded = 0;
+        for (StockItem stockItem : this.stock){
+            totalMakupAdded += stockItem.calculateMarkUp();
+        }
+        return totalMakupAdded / this.stockCount();
+    }
 }
