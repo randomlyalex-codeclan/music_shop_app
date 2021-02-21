@@ -3,11 +3,11 @@ import java.util.ArrayList;
 public class Shop {
 
     private String name;
-    private ArrayList<ISell> stock;
+    private ArrayList<StockItem> stock;
 
     public Shop(String name) {
         this.name = name;
-        this.stock = new ArrayList<ISell>();
+        this.stock = new ArrayList<StockItem>();
     }
 
     public void addToStock(StockItem item){
@@ -18,4 +18,7 @@ public class Shop {
         this.stock.remove(item);
     }
 
+    public int stockCount() {
+        return stock.size();
+    }
 }

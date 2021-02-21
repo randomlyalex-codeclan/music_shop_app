@@ -7,9 +7,6 @@ public class Piano extends Instrument {
         this.noOfKeys = noOfKeys;
     }
 
-    public double calculateMarkUp() {
-        return 0;
-    }
 
     @Override
     public String play() {

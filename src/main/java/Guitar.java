@@ -9,12 +9,9 @@ public class Guitar extends Instrument {
         this.handedness = handedness;
     }
 
-        public double calculateMarkUp() {
-        return 0;
-    }
-
     @Override
     public String play() {
         return "Guitar sounds";
     }
+
 }

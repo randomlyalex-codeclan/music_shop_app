@@ -4,5 +4,4 @@ public abstract class Accessory extends StockItem implements ISell{
         super(name, retailPrice, costPrice);
     }
 
-    public abstract double calculateMarkUp();
 }
