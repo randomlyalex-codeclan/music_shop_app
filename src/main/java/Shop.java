@@ -9,4 +9,13 @@ public class Shop {
         this.name = name;
         this.stock = new ArrayList<ISell>();
     }
+
+    public void addToStock(StockItem item){
+        this.stock.add(item);
+    }
+
+    public void removeFromStock(StockItem item){
+        this.stock.remove(item);
+    }
+
 }
